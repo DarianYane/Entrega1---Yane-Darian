@@ -12,3 +12,10 @@ def listar_familiar(request):
     }
     return render(request,"DatosFlia/familiares.html",context)
 
+def reg_familiar(request):
+    context = {
+        "familiares": Familiar.objects.all(),
+    }
+    return render(request,"DatosFlia/regFamiliar.html",context)
+    
+    
