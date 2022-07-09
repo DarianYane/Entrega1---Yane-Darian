@@ -23,5 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #Agrego los path que necesito 
     path('familiares/', listar_familiar),
-    path('regFamiliar/', reg_familiar)
+    path('regFamiliar/', reg_familiar),
+
+
 ]

@@ -15,13 +15,18 @@
 </head>
 <body>
    
-    <!-- Le pongo un título a la lista de familiares, y una descripción de los campos que veremos debajo -->
+    {% if miFormulario.errors %}
+    <p style="color: red,">Están mal los datos. REVISAR</p>
+    {% endif %}
+
     <h1>Registre un Familiar</h1>
     
     <br>
-    <form action="regFamiliar/" method="POST">
+    <!-- Armo el form -->
+    <form action="/regFamiliar/" method="POST">
         <!-- Agrego el token de seguridad -->
         {% csrf_token %}
+        <!-- Agrego los input y el botón de submit -->
         <p>Nombre: <Input type="text" name="nombre"></p>
         <p>Apellido: <Input type="text" name="apellido"></p>
         <p>DNI: <Input type="number" name="dni"></p>
