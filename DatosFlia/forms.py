@@ -7,6 +7,7 @@ class formFamiliar(forms.Form):
     email = forms.EmailField()
     fecha_nacimiento = forms.DateField() #(YYYY-MM-DD)
 
-
+class BusquedaFamiliar(forms.Form):
+    nombre = forms.CharField()
 
 
