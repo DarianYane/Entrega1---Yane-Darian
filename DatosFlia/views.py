@@ -7,6 +7,10 @@ from DatosFlia.forms import formFamiliar, BusquedaFamiliar
 
 # Estas son mis vistas
 # Hago la funcion para listar a los familiares
+def base(request):
+    
+    return render(request,"DatosFlia/base.html",{})
+
 def listar_familiar(request):
     context = {
         "familiares": Familiar.objects.all(),
