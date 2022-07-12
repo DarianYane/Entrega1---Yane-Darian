@@ -8,7 +8,6 @@ from DatosFlia.forms import formFamiliar, formElectrodomestico, formVehiculo, Bu
 # Estas son mis vistas
 # Hago las views para listar
 
-
 def listar_familiar(request):
     context = {
         "familiares": Familiar.objects.all(),
@@ -29,6 +28,7 @@ def listar_vehiculo(request):
 
 
 # Hago las views para registrar instancias
+
 def reg_familiar(request):
     if request.method == "POST":
         miFormulario = formFamiliar(request.POST) #Aquí me llaega toda la información del POST
