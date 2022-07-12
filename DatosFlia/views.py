@@ -88,7 +88,7 @@ def reg_vehiculo(request):
 
 
 
-# Hago las views de búsqueda
+# Hago la view de búsqueda
 
 def formulario_busqueda(request):
     formulario_busqueda = BusquedaFamiliar()
