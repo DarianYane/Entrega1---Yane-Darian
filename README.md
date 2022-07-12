@@ -27,5 +27,6 @@ Página para listar Vehículos:
 http://127.0.0.1:8000/vehiculos/
 
 . En http://127.0.0.1:8000/buscar/ se puede buscar un familiar de los ya cargados en la base de datos.
+Se puede testear buscando "Carlos", "Ana" o "Diego" (son 3 nombres que ya existen en la base de datos).
 
 . En forms.py están los 3 formularios de los 3 tipos de datos (formFamiliar, formElectrodomestico y formVehiculo); y el form de búsqueda familiar (BusquedaFamiliar). 
