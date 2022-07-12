@@ -4,17 +4,17 @@
 <!-- Hago un template para mostrar los datos -->
     {% block content %}
     <!-- Le pongo un título a la lista de datos, y una descripción de los campos que veremos debajo -->
-    <h1>Listado de Familiares en la base de datos</h1>
-    <h5>(Nombre y Apellido, DNI, email y Fecha de Nacimiento)</h5>
+    <h1>Listado de Electrodomésticos en la base de datos</h1>
+    <h5>(Tipo, Marca, Modelo, Precio y Fecha de Fabricación)</h5>
     <br>
     
     
     <ul>
         <!-- Hago un for para que me traiga una a una los instancias en la db -->
-        {% for familiar in familiares %}
+        {% for electrodomestico in electrodomesticos %}
             <p>
             <h4>
-            <li>{{familiar.nombre}} {{familiar.apellido}}, {{familiar.dni}}, {{familiar.email}}, {{familiar.fecha_nacimiento}}</li>
+            <li>{{electrodomestico.tipoE}} {{electrodomestico.marcaE}}, {{electrodomestico.modeloE}}, {{electrodomestico.precio}}, {{electrodomestico.fecha_produccionE}}</li>
             </h4>
             </p>
             

@@ -17,13 +17,16 @@ from django.contrib import admin
 from django.urls import path
 
 # Importo de mi_app.views las vistas (funciones) que necesito
-from DatosFlia.views import listar_familiar, reg_familiar, formulario_busqueda, base
+from DatosFlia.views import listar_familiar, listar_electrodomestico, listar_vehiculo, reg_familiar, reg_electrodomestico, reg_vehiculo, formulario_busqueda
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     #Agrego los path que necesito 
     path('familiares/', listar_familiar),
+    path('electrodomesticos/', listar_electrodomestico),
+    path('vehiculos/', listar_vehiculo),
     path('regFamiliar/', reg_familiar),
+    path('regElectrodomestico/', reg_electrodomestico),
+    path('regVehiculo/', reg_vehiculo),
     path('buscar/', formulario_busqueda),
-    path('base/', base)
 ]

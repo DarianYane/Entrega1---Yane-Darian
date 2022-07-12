@@ -1,0 +1,40 @@
+<!-- Hago un template para mostrar los datos de mis familiares -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respuesta</title>
+    <!-- Le pongo bootstrap para que mejore un poco el diseño -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    {% block content %}
+   
+    
+
+    {% endblock %}
+
+    <br>
+    <!-- Otra opción, pero no tiene los type del anterior. No me gusta, pero no quiero perder el código. Por eso no lo borro -->
+
+    <!--<form action="/regFamiliar/" method="POST"> -->
+        <!-- Agrego el token de seguridad -->
+    
+        <!--
+        {% csrf_token %}
+        <table>
+        {{miFormulario.as_table}}
+        </table>
+        <p><input type="submit" value="Enviar"></p>
+    </form> -->
+    
+    
+</body>
+</html>
