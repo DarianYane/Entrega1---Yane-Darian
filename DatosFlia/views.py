@@ -6,7 +6,7 @@ from DatosFlia.forms import formFamiliar, formElectrodomestico, formVehiculo, Bu
 
 
 # Estas son mis vistas
-# Hago la funcion para listar a los familiares
+# Hago las views para listar
 
 
 def listar_familiar(request):
@@ -28,7 +28,7 @@ def listar_vehiculo(request):
     return render(request,"DatosFlia/vehiculos.html",contextV)
 
 
-
+# Hago las views para registrar instancias
 def reg_familiar(request):
     if request.method == "POST":
         miFormulario = formFamiliar(request.POST) #Aquí me llaega toda la información del POST
@@ -88,7 +88,7 @@ def reg_vehiculo(request):
 
 
 
-
+# Hago las views de búsqueda
 
 def formulario_busqueda(request):
     formulario_busqueda = BusquedaFamiliar()
