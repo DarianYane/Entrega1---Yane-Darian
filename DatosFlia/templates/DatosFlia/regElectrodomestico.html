@@ -1,30 +1,28 @@
 <!-- Extiendo baseReg.html -->
 {% extends 'DatosFlia/baseReg.html' %}
-
+    
     {% block content %}
-
+   
     {% if miFormulario.errors %}
     <p style="color: red,">Están mal los datos. REVISAR</p>
     {% endif %}
 
-    <h1>Registre un Familiar</h1>
+    <h1>Registre un Electrodoméstico</h1>
     
     <br>
     <!-- Armo el form -->
-    <form action="/regFamiliar/" method="POST">
+    <form action="/regElectrodomestico/" method="POST">
         <!-- Agrego el token de seguridad -->
         {% csrf_token %}
         <!-- Agrego los input y el botón de submit -->
         
-        <p>Nombre: <Input type="text" name="nombre"></p>
-        <p>Apellido: <Input type="text" name="apellido"></p>
-        <p>DNI: <Input type="number" name="dni"></p>
-        <p>Email: <Input type="email" name="email"></p>
-        <p>Fecha de Nacimiento: <Input type="date" name="fecha_nacimiento"></p>
+        <p>Tipo: <Input type="text" name="tipoE"></p>
+        <p>Marca: <Input type="text" name="marcaE"></p>
+        <p>Modelo: <Input type="text" name="modeloE"></p>
+        <p>Precio: <Input type="number" name="precio"></p>
+        <p>Fecha de Fabricación: <Input type="date" name="fecha_produccionE"></p>
         <p><input type="submit" value="Enviar"></p>
         
     </form> 
 
     {% endblock %}
-
-    
